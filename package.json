@@ -1,0 +1,25 @@
+{
+    "name": "gfs-example-loader",
+    "version": "1.0.1",
+    "description": "gfs example loader for webpack",
+    "main": "index.js",
+    "author": {
+      "name": "min.xiao",
+      "email": "277407493@qq.com"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/future-team/gfs-example-loader"
+    },
+    "bugs": {
+      "url": "https://github.com/future-team/gfs-example-loader/issues"
+    },
+    "license": "MIT",
+    "dependencies": {
+    },
+    "keywords": [
+      "webpack",
+      "loader",
+      "example"
+    ]
+}
