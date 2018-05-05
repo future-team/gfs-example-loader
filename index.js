@@ -22,7 +22,13 @@ module.exports = function (source, inputSourceMap) {
     }
 
     if(aCache && aCache.title){
-        source += `\nmodule.exports.attribute = ${JSON.stringify(aCache)}`;
+        source +=[
+            '\nmodule.exports.attribute ={',
+            `title:${aCache.title},`,
+            `description:${aCache.description},`,
+            `code:${aCache.code},`,
+            '}'
+        ].join('');
     }
 
     return source;
