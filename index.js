@@ -1,6 +1,6 @@
 module.exports = function (source, inputSourceMap) {
     
-    var rNote = /(\/\/demo\sstart([^*]|[\r\n])*\/\/demo\send)/g;
+    var rNote = /\/\/demo\sstart(.|[\r\n])*\/\/demo\send/g;
     var mstr = source.match(rNote);
     var rAnnotation = /\/\*[@#](title|description|class){1}([^*]|[\r\n]|(\*+([^*\/]|[\r\n])))*\*+\//g;
     var astr = source.match(rAnnotation);
